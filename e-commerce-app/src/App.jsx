@@ -3,8 +3,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Home from "./pages/Home"
-import ProductPage from "./pages/ProductPage"
-import CartPage from "./pages/CartPage"
+import ProductDetails from "./pages/ProductDetails"
+import Cart from "./pages/Cart"
 import Checkout from "./pages/Checkout"
 import OrderSuccess from "./pages/OrderSuccess"
 
@@ -14,8 +14,8 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home />} />
-        <Route path="/product/:id" element={<ProductPage />} />
-        <Route path="/cart" element={<CartPage />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/order-success" element={<OrderSuccess />} />
 
